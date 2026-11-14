@@ -13,15 +13,15 @@ $antallRader = mysqli_num_rows($sql_resultat);
 
 print("<table border='1'>");
 print("<tr>
-        <th align='left'>Klassekode</th>
-        <th align='left'>Klassenavn</th>
-        <th align='left'>Studiumkode</th>
+        <th align='left'>kassekode</th>
+        <th align='left'>kassenavn</th>
+        <th align='left'>studiumkode</th>
     </tr>");
 
 for ($r = 1; $r <= $antallRader; $r++) {
     $rad = mysqli_fetch_array($sql_resultat);
-    $klassekode = $rad["Klassekode"];
-    $klassenavn = $rad["Klassenavn"];
+    $klassekode = $rad["kassekode"];
+    $klassenavn = $rad["kassenavn"];
     $studiumkode = $rad["studiumkode"];
 
     print("<tr>
