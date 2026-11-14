@@ -13,8 +13,8 @@ $antallRader = mysqli_num_rows($sql_resultat);
 
 print("<table border='1'>");
 print("<tr>
-        <th align='left'>kassekode</th>
-        <th align='left'>kassenavn</th>
+        <th align='left'>klassekode</th>
+        <th align='left'>klassenavn</th>
         <th align='left'>studiumkode</th>
     </tr>");
 
@@ -48,3 +48,7 @@ print("</table>");
     </div>
 </body>
 </html>
+
+
+
+
