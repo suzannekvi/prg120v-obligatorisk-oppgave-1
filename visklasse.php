@@ -5,7 +5,7 @@ include("database.php");
 <h1>Viser alle registerte klasser</h1>
 
 <?php
-$sqlSetning = "SELECT * FROM Klasse";
+$sqlSetning = "SELECT * FROM klasse";
 
 $sql_resultat = mysqli_query($db, $sqlSetning)
     or die("ikke mulig å hente data fra databasen");
