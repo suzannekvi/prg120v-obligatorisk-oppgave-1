@@ -6,7 +6,7 @@ include("database.php");
 <form method="post" action="regklasse.php" id="registerKlasse" name="registerKlasse">
   Klassekode <input type="text" name="klassekode" id="klassekode" required /> <br/>
   Klassenavn <input type="text" name="klassenavn" id="klassenavn" required /> <br/>
-  Studiekode <input type="text" name="studiekode" id="studiekode" required /> <br/>
+  Studiumkode <input type="text" name="studiumkode" id="studiumkode" required /> <br/>
   <input type="submit" value="Registrer klasse" id="Registrerklasse" name="Registrerklasse"/>
   <input type="reset" value="Nullstill" id="Nullstill" name="Nullstill" /> <br/>
 </form> 
@@ -15,14 +15,12 @@ include("database.php");
     if (isset($_POST["Registrerklasse"])) {
         $klassekode = $_POST['klassekode'];
         $klassenavn = $_POST['klassenavn'];
-        $studiekode = $_POST['studiekode'];
+        $studiumkode = $_POST['studiumkode'];
 
-        if (!klassekode || !klassenavn || !studiekode)
+        if (!$klassekode || !$klassenavn || !$studiumkode)
         {
             echo "Alle felt må fylles ut";
         } else {
-
-         include("database.php");
         
          $sqlsetning = "SELECT * FROM klasse WHERE klassekode='$klassekode'";
          $sqlresultat = mysqli_query($db, $sqlsetning) or die ("ikke mulig å hente data fra databasen");
@@ -35,9 +33,10 @@ include("database.php");
          }
          else
          {
-            $sqlsetning = "INSERT INTO klasse VALUES ('$klassekode', '$klassenavn', '$studiekode')";
+            $sqlsetning = "INSERT INTO klasse (klassekode, klassenavn, studiumkode) 
+            VALUES ('$klassekode', '$klassenavn', '$studiumkode')";
             mysqli_query($db, $sqlsetning) or die ("ikke mulig å registrere data i databasen");
-            echo "Klassen er nå registrert:$klassekode, $klassenavn og $studiekode";
+            echo "Klassen er nå registrert:$klassekode, $klassenavn og $studiumkode";
          }
          
       
