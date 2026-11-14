@@ -1,10 +1,2 @@
-.env
-.env.*
-
-*.log
-
-.vscode/
-.idea/
-
-.DS_Store
-Thumbs.db
+# Databaseopplysninger – skal ikke lastes opp til GitHub
+database.php
