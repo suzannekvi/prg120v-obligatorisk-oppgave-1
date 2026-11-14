@@ -10,22 +10,12 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3 {
-    text-align: center;
-}
 
 .meny {
     display: flex;
     justify-content: center;
     gap: 100px;
     margin-top: 30px;
-}
-.innhold {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
 }
 
 form {
@@ -34,15 +24,6 @@ form {
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-select {
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    padding: 5px;
-    font-size: 16px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
 }
 
 .klasse, .student {
