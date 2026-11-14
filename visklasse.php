@@ -7,8 +7,7 @@ include("database.php");
 <?php
 $sqlSetning = "SELECT * FROM klasse";
 
-$sql_resultat = mysqli_query($db, $sqlSetning)
-    or die("ikke mulig å hente data fra databasen");
+$sql_resultat = mysqli_query($db, $sqlSetning) or die("ikke mulig å hente data fra databasen");
 
 $antallRader = mysqli_num_rows($sql_resultat);
 
