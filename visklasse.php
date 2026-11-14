@@ -20,8 +20,8 @@ print("<tr>
 
 for ($r = 1; $r <= $antallRader; $r++) {
     $rad = mysqli_fetch_array($sql_resultat);
-    $klassekode = $rad["kassekode"];
-    $klassenavn = $rad["kassenavn"];
+    $klassekode = $rad["klassekode"];
+    $klassenavn = $rad["klassenavn"];
     $studiumkode = $rad["studiumkode"];
 
     print("<tr>
