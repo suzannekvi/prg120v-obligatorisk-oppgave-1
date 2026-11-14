@@ -93,5 +93,9 @@ if (isset($_POST["slettklasseknapp"]))
 ?>
 
 
+ <div class="knapp">
+        <button><a href="index.html">Tilbake til forsiden</a></button>
+    </div>
+
 </body>
 </html>
