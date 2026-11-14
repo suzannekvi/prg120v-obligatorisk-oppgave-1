@@ -10,6 +10,10 @@ body {
     padding: 20px;
 }
 
+h1, h2, h3 {
+    text-align: center;
+}
+
 .meny {
     display: flex;
     justify-content: center;
@@ -27,3 +31,11 @@ select {
     border: 1px solid #ccc;
 }
 
+.klasse, .student {
+    background-color: rgba(255, 255, 255, 0.714);
+    width: 220px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
