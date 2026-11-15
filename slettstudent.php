@@ -21,7 +21,7 @@ $sqlresultat = mysqli_query($db, $sqlsetning)
 $antallRader = mysqli_num_rows($sqlresultat);
 ?>
 
-<form method="post" action="sletstudent.php"
+<form method="post" action="slettstudent.php"
     id="slettstudent" name="slettstudent"
     onSubmit="return bekreft()">
     brukernavn <select id="brukernavn" name="brukernavn" required>
