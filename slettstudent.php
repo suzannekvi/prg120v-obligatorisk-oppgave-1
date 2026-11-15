@@ -12,6 +12,8 @@ include("database.php");
 <body>
     <script src="funksjoner.js"></script>
 
+<div class="visning">
+
 <h1>Slett student</h1>
 
 <?php
@@ -74,5 +76,6 @@ if (isset($_POST["slettstudentknapp"]))
         <button><a href="index.html">Tilbake til forsiden</a></button>
     </div>
 
+</div>
 </body>
 </html>

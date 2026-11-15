@@ -1,6 +1,18 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vis klasser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
 <?php
 include("database.php");
 ?>
+
+<div class="visning">
 
 <h1>Viser alle registerte klasser</h1>
 
@@ -34,18 +46,11 @@ for ($r = 1; $r <= $antallRader; $r++) {
 print("</table>");
 ?>
 
-<!DOCTYPE html>
-<html lang="no">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vis klasser</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
     <div class="knapp">
         <button><a href="index.html">Tilbake til forsiden</a></button>
     </div>
+</div>
 </body>
 </html>
 

@@ -10,6 +10,8 @@ include("database.php");
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="visning">
     <h1>Viser alle registerte studenter</h1>
 
 <?php
@@ -48,5 +50,7 @@ print("<tr>
 <div class="knapp">
         <button><a href="index.html">Tilbake til forsiden</a></button>
     </div>
+
+</div>
 </body>
 </html>

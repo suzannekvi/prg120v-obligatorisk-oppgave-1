@@ -1,8 +1,20 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrer klasse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <?php
 include("database.php");
 ?>
 
 <h1>Registrer klasse</h1>
+<div class="visning">
+
 <form method="post" action="regklasse.php" id="registerKlasse" name="registerKlasse">
   Klassekode <input type="text" name="klassekode" id="klassekode" required /> <br/>
   Klassenavn <input type="text" name="klassenavn" id="klassenavn" required /> <br/>
@@ -44,18 +56,10 @@ include("database.php");
     }
     ?>
     
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrer klasse</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
     <div class="knapp">
         <button><a href="index.html">Tilbake til forsiden</a></button>
     </div>
+
+</div>
 </body>
 </html>

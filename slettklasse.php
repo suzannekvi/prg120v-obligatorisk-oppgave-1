@@ -24,6 +24,8 @@ $antallRader = mysqli_num_rows($sqlresultat);
 <script src="funksjoner.js">
 </script>
 
+<div class="visning">
+
 <h1>Slett klasse</h1>
 
 
@@ -95,5 +97,6 @@ if (isset($_POST["slettklasseknapp"]))
         <button><a href="index.html">Tilbake til forsiden</a></button>
     </div>
 
+</div>
 </body>
 </html>
