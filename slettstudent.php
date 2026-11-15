@@ -11,7 +11,7 @@ include("database.php");
 </head>
 <body>
 <div class="visning">
-    
+
     <script src="funksjoner.js"></script>
 
 <h1>Slett student</h1>
@@ -26,7 +26,7 @@ $antallRader = mysqli_num_rows($sqlresultat);
 <form method="post" action="slettstudent.php"
     id="slettstudent" name="slettstudent"
     onSubmit="return bekreft()">
-    brukernavn <select id="brukernavn" name="brukernavn" required>
+    Brukernavn <select id="brukernavn" name="brukernavn" required>
         <option value="">Velg brukernavn</option>
         
     <?php

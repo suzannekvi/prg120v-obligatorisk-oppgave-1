@@ -33,7 +33,7 @@ $antallRader = mysqli_num_rows($sqlresultat);
  id="slettKlasse" name="slettKlasse" 
  onSubmit="return bekreft()">
 
- <select name="klassekode" id="klassekode" required>
+ Klassekode<select name="klassekode" id="klassekode" required>
   <option value="">Velg klassekode</option>
 
 
