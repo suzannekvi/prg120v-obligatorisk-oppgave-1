@@ -34,3 +34,54 @@ form {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* VIS KLASSE OG VIS STUDENT */
+
+.visning {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: fit-content;
+    min-width: 400px;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* TABELLER */
+
+.visning table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 15px;
+}
+
+.visning th,
+.visning td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.visning th {
+    background-color: #d9edf9;
+}
+
+
+/* TILBAKEKNAPP */
+
+.visning .knapp {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.visning .knapp a {
+    color: #1768a5;
+    text-decoration: none;
+}
+
+.visning .knapp a:hover {
+    text-decoration: underline;
+}
+
+
