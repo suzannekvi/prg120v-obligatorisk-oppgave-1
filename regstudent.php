@@ -69,7 +69,7 @@ include("database.php");
                     echo "Studenten er nå registrert: $brukernavn, $fornavn, $etternavn og $klassekode";
                 }
             }
-
+        ?>
 
 </body>
 </html>
