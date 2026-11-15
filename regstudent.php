@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrer Student</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -43,33 +44,45 @@ include("database.php");
 </form>
 
 <?php
-        if (isset($_POST["Registrerstudent"])) {
-              }
+        if (isset($_POST["Registrerstudent"])) 
+        {
+    
               $brukernavn = $_POST["brukernavn"];
               $fornavn = $_POST["fornavn"];
               $etternavn = $_POST["etternavn"];
               $klassekode = $_POST["klassekode"];
 
-            if (!$brukernavn || !$fornavn || !$etternavn || !$klassekode) {
-                echo "Alle felt må fylles ut";
-            } else {
+            if (!$brukernavn || !$fornavn || !$etternavn || !$klassekode) 
+                {
+                    echo "Alle felt må fylles ut";
+                }
+             else 
+             {
                 $sqlsetning = "SELECT * FROM student WHERE brukernavn='$brukernavn'";
                 $sqlresultat = mysqli_query($db, $sqlsetning) 
                 or die("ikke mulig å hente data fra databasen");
                 $antallRader = mysqli_num_rows($sqlresultat);
 
-                if ($antallRader != 0) {
-                    echo "Brukernavnet er allerede registrert i databasen";
-                } else {
-                    $sqlsetning = "INSERT INTO student (brukernavn, fornavn, etternavn, klassekode) 
-                    VALUES ('$brukernavn', '$fornavn', '$etternavn', '$klassekode')";
-                    mysqli_query($db, $sqlsetning) or die
+                if ($antallRader != 0) 
+                    {
+                        echo "Brukernavnet er allerede registrert i databasen";
+                    }
+                 else 
+                    {
+                        $sqlsetning = "INSERT INTO student (brukernavn, fornavn, etternavn, klassekode) 
+                        VALUES ('$brukernavn', '$fornavn', '$etternavn', '$klassekode')";
+                        mysqli_query($db, $sqlsetning) or die
                     ("ikke mulig å registrere data i databasen");
 
                     echo "Studenten er nå registrert: $brukernavn, $fornavn, $etternavn og $klassekode";
-                }
-            }
+                 }
+              }
+        }
+            
         ?>
 
+ <div class="knapp">
+        <button><a href="index.html">Tilbake til forsiden</a></button>
+    </div>
 </body>
 </html>
