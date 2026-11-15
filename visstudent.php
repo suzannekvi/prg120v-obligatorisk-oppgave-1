@@ -20,18 +20,18 @@ $antallRader = mysqli_num_rows($sql_resultat);
 
 print("<table border='1'>");
 print("<tr>
-        <th align='left'>brukernavn</th>
-        <th align='left'>fornavn</th>
-        <th align='left'>etternavn</th>
-        <th align='left'>klassekode</th>
+        <th align='left'>Brukernavn</th>
+        <th align='left'>Fornavn</th>
+        <th align='left'>Etternavn</th>
+        <th align='left'>Klassekode</th>
     </tr>");
 
     for ($r = 1; $r <= $antallRader; $r++) {
         $rad = mysqli_fetch_array($sql_resultat);
-        $Brukernavn = $rad["brukernavn"];
-        $Fornavn = $rad["fornavn"];
-        $Etternavn = $rad["etternavn"];
-        $Klassekode = $rad["klassekode"];
+        $brukernavn = $rad["brukernavn"];
+        $fornavn = $rad["fornavn"];
+        $etternavn = $rad["etternavn"];
+        $klassekode = $rad["klassekode"];
 
         print("<tr>
         <td>$brukernavn</td>

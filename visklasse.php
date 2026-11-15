@@ -13,9 +13,9 @@ $antallRader = mysqli_num_rows($sql_resultat);
 
 print("<table border='1'>");
 print("<tr>
-        <th align='left'>klassekode</th>
-        <th align='left'>klassenavn</th>
-        <th align='left'>studiumkode</th>
+        <th align='left'>Klassekode</th>
+        <th align='left'>Klassenavn</th>
+        <th align='left'>Studiumkode</th>
     </tr>");
 
 for ($r = 1; $r <= $antallRader; $r++) {
