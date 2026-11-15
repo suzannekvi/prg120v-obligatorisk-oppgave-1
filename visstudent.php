@@ -28,10 +28,10 @@ print("<tr>
 
     for ($r = 1; $r <= $antallRader; $r++) {
         $rad = mysqli_fetch_array($sql_resultat);
-        $brukernavn = $rad["brukernavn"];
-        $fornavn = $rad["fornavn"];
-        $etternavn = $rad["etternavn"];
-        $klassekode = $rad["klassekode"];
+        $Brukernavn = $rad["brukernavn"];
+        $Fornavn = $rad["fornavn"];
+        $Etternavn = $rad["etternavn"];
+        $Klassekode = $rad["klassekode"];
 
         print("<tr>
         <td>$brukernavn</td>
