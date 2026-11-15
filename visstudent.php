@@ -10,8 +10,8 @@ include("database.php");
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="visning">
+    
     <h1>Viser alle registerte studenter</h1>
 
 <?php

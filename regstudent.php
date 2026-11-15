@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="visning">
     
 <?php
 include("database.php");
 ?>
 
-<div class="visning">
 <h1>Registrer student</h1>
 
 <form method="post" action="regstudent.php" id="registerstudent" name="registerstudent">

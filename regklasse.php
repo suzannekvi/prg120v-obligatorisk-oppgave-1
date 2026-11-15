@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<div class="visning"> 
+
     <?php
 include("database.php");
 ?>
 
 <h1>Registrer klasse</h1>
-<div class="visning">
 
 <form method="post" action="regklasse.php" id="registerKlasse" name="registerKlasse">
   Klassekode <input type="text" name="klassekode" id="klassekode" required /> <br/>

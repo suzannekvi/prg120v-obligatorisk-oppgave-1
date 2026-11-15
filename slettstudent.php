@@ -10,9 +10,9 @@ include("database.php");
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="funksjoner.js"></script>
-
 <div class="visning">
+    
+    <script src="funksjoner.js"></script>
 
 <h1>Slett student</h1>
 

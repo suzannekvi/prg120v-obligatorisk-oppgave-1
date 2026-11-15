@@ -7,12 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<div class="visning">
 <?php
 include("database.php");
 ?>
 
-<div class="visning">
 
 <h1>Viser alle registerte klasser</h1>
 
@@ -50,6 +49,7 @@ print("</table>");
     <div class="knapp">
         <button><a href="index.html">Tilbake til forsiden</a></button>
     </div>
+    
 </div>
 </body>
 </html>

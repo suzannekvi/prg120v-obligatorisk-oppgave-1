@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="visning">
         
 <?php
 // Kobler til databasen
@@ -24,7 +25,6 @@ $antallRader = mysqli_num_rows($sqlresultat);
 <script src="funksjoner.js">
 </script>
 
-<div class="visning">
 
 <h1>Slett klasse</h1>
 
