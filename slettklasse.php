@@ -68,7 +68,6 @@ if (isset($_POST["slettklasseknapp"]))
     }
     else
     {
-        // Sjekker om klassen har registrerte studenter
         $sqlsetning = "SELECT * FROM student WHERE klassekode='$klassekode'";
         $sqlresultat = mysqli_query($db, $sqlsetning)
             or die("Ikke mulig å hente data fra databasen");
@@ -91,7 +90,6 @@ if (isset($_POST["slettklasseknapp"]))
     }
 }
 ?>
-
 
  <div class="knapp">
         <button><a href="index.html">Tilbake til forsiden</a></button>
