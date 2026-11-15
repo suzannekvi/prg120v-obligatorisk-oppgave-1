@@ -16,10 +16,10 @@ include("database.php");
 <h1>Registrer student</h1>
 
 <form method="post" action="regstudent.php" id="registerstudent" name="registerstudent">
-    brukernavn <input type="text" name="brukernavn" id="brukernavn" required /> <br/>
-    fornavn <input type="text" name="fornavn" id="fornavn" required /> <br/>
-    etternavn <input type="text" name="etternavn" id="etternavn" required /> <br/>
-    klassekode
+    Brukernavn <input type="text" name="brukernavn" id="brukernavn" required /> <br/>
+    Fornavn <input type="text" name="fornavn" id="fornavn" required /> <br/>
+    Etternavn <input type="text" name="etternavn" id="etternavn" required /> <br/>
+    Klassekode
     <select name="klassekode" id="klassekode" required>
         <option value="">Velg klassekode</option>
 
